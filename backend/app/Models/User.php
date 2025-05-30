@@ -50,6 +50,8 @@ class User extends Authenticatable
             'achievement_id',     // внешний ключ в user_achievements -> achievements
         );
     }
+
+    // HIHIHIHIHIHIHIHIHIHIHI
     public function hasAchievement(int $achievementId): bool
     {
         return $this->achievements()->where('achievement_id', $achievementId)->exists();
