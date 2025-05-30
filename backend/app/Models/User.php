@@ -12,21 +12,15 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-<<<<<<< HEAD
     protected $table = 'users';
-=======
 
->>>>>>> 6814b3d603f080bbd1f12b75d762da234cd501cc
     protected $fillable = [
         'name',
         'email',
         'password',
-<<<<<<< HEAD
         'tg_id',
         'balance',
         'last_visit',     
-=======
->>>>>>> 6814b3d603f080bbd1f12b75d762da234cd501cc
     ];
 
     protected $hidden = [
@@ -36,7 +30,6 @@ class User extends Authenticatable
 
     protected $casts = [
         'email_verified_at' => 'datetime',
-<<<<<<< HEAD
         'last_visit' => 'datetime',
     ];
 
@@ -63,7 +56,5 @@ class User extends Authenticatable
         $this->save();
     }
     
-=======
     ];
->>>>>>> 6814b3d603f080bbd1f12b75d762da234cd501cc
 }
