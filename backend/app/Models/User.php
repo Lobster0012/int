@@ -57,5 +57,7 @@ class User extends Authenticatable
         $this->balance += $amount;
         $this->save();
     }
-    
+
+
+    // Здесь я сам что то отредачил
 }
