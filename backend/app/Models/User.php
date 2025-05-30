@@ -45,6 +45,8 @@ class User extends Authenticatable
     }
 
     // HIHIHIHIHIHIHIHIHIHIHI
+
+    //bb
     public function hasAchievement(int $achievementId): bool
     {
         return $this->achievements()->where('achievement_id', $achievementId)->exists();
